@@ -1034,12 +1034,12 @@ box-shadow: -2px 5px 12px -1px #000000; */
 
 .divmaincarrinho {
   width: 100%;
-  height: auto;
-  /* background-color: red; */
+  height: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  overflow: auto;
 }
 
 .mochilaimg {
@@ -1142,7 +1142,7 @@ box-shadow: -2px 5px 12px -1px #000000; */
 .divitemc {
   width: 100%;
   /* background-color: red; */
-  height: 100%;
+  height: auto;
   display: flex;
   justify-content: center;
   margin-bottom: 10px;
@@ -1436,4 +1436,71 @@ box-shadow: -2px 5px 12px -1px #000000; */
 .containersvgmorerless span {
   color: white;
   margin: 0;
+}
+.footer-subtotal{
+  width: 100%;
+  position: absolute;
+  height: 100px;
+  bottom: 0;
+  left: 0;
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+
+}
+.footersb1, .footersb2{
+  width: 100%;
+  display: flex;
+}
+.footer-subtotalmargin{
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+}
+.subtotalvaluediv{
+  width: 40px;
+  height: 30px;
+  background-color: black;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+
+}
+.footersb1{
+justify-content: space-between;
+  height: 40%;
+  align-items: center;
+/* background-color: #0284c7; */
+}
+.footersb2{
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 60%;
+
+}
+.subtotalspan1{
+  font-weight: 800;
+}
+.subtotalspan2{
+  font-size: 14px;
+  color: white;
+}
+.spantextp{
+  font-size: 13px;
+  margin-top: -5px;
+  font-weight: 700;
+}
+.subtotalbutton{
+  width: 100%;
+  background-color: black;
+  height: 100%;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  color: white;
+  font-size: 15px;
+  /* margin-top: -2px; */
 }

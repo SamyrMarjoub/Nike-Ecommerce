@@ -80,7 +80,6 @@ const App = () => {
       width: 600
     }
   )
-  const [qtd, setQtd] = useState(0)
   const [ida, setIda] = useState(1000)
   const [id1, setid1] = useState(false)
   const [id2, setid2] = useState(false)
@@ -97,6 +96,24 @@ const App = () => {
   const [id13, setid13] = useState(false)
   const [id14, setid14] = useState(false)
   const [id15, setid15] = useState(false)
+  const [qtd, setQtd] = useState(0)
+  let [qtd1, setQtd1] = useState(1)
+  let [qtd2, setQtd2] = useState(1)
+  let [qtd3, setQtd3] = useState(1)
+  let [qtd4, setQtd4] = useState(1)
+  let [qtd5, setQtd5] = useState(1)
+  let [qtd6, setQtd6] = useState(1)
+  let [qtd7, setQtd7] = useState(1)
+  let [qtd8, setQtd8] = useState(1)
+  let [qtd9, setQtd9] = useState(1)
+  let [qtd10, setQtd10] = useState(1)
+  let [qtd11, setQtd11] = useState(1)
+  let [qtd12, setQtd12] = useState(1)
+  let [qtd13, setQtd13] = useState(1)
+  let [qtd14, setQtd14] = useState(1)
+  let [qtd15, setQtd15] = useState(1)
+
+
 
   useEffect(() => {
     const header = document.querySelector('header')
@@ -132,7 +149,6 @@ const App = () => {
         adidaslogo.classList.remove('filtercolorw')
         header.classList.remove('bgwhitet')
 
-        // console.log('oai')
       }
     })
 
@@ -164,8 +180,9 @@ const App = () => {
 
   }
   useEffect(() => {
-
-  }, [ida])
+    console.log(qtd1, qtd2, qtd3, qtd4, qtd5, qtd5, qtd6,
+      qtd7, qtd8, qtd9, qtd10, qtd11, qtd12, qtd12, qtd13, qtd14, qtd15)
+  }, [qtd1, qtd10, qtd11, qtd12, qtd13, qtd14, qtd15, qtd2, qtd3, qtd4, qtd5, qtd6, qtd7, qtd8, qtd9])
   function adccarrinho(e) {
     const id = e.target.id
 
@@ -182,125 +199,208 @@ const App = () => {
     div2.classList.add('success-animation')
     sucessdiv.classList.add('avisosucesso', "flex")
     sucessdiv.id = ida
-    if (id === 'c1' && id1) {
-      return
-    }else{
-      
+
+
+
+    function CodigoIntegrado() {
+      const divmaincarrinho = document.querySelector('.divmaincarrinho')
+      divmaincarrinho.classList.add('divmaincarrinhostart')
+      const divitemc = document.createElement('div')
+      divitemc.classList.add('divitemc')
+      const topdivi = document.createElement('div')
+      topdivi.classList.add('topdivi')
+      const imgitem = document.createElement('div')
+      imgitem.classList.add('imgitem')
+      imgitem.classList.add(id === 'c1' ? 'gid1' : id === 'c2'
+        ? 'gid2' : id === 'c3' ? 'gid3' : id === 'c4' ?
+          'gid4' : id === 'c5' ? 'gid5' : id === 'c6' ?
+            'gid6' : id === 'c7' ? 'gid7' : id === 'c8' ?
+              'gid8' : id === 'c9' ? 'gid9' : id === 'c10' ?
+                'gid10' : id === 'c11' ? 'gid11' : id === 'c12'
+                  ? 'gid12' : id === 'c13' ? 'gid13' : id === 'c14'
+                    ? 'gid14' : 'gid15'
+      )
+
+      const imggerada = document.createElement('img')
+      imggerada.classList.add('imgitemi')
+      const flexcti = document.createElement('div')
+      flexcti.classList.add('flexcti')
+      const flexcti_50 = document.createElement('div')
+      flexcti_50.classList.add('flexcti-50', 'fp1')
+      const titlespanfc = document.createElement('span')
+      titlespanfc.classList.add('titlspanfc')
+      const subtitlespanfc = document.createElement('span')
+      subtitlespanfc.classList.add('subtitlespanfc')
+      const addorlessdiv = document.createElement('div')
+      addorlessdiv.classList.add('addorlessdiv')
+      const flexcti_502 = document.createElement('div')
+      const spanvalor = document.createElement('span')
+      spanvalor.classList.add('spanmsgi')
+      flexcti_502.classList.add('flexcti-50', 'fp2')
+      const m_70 = document.createElement('div')
+      m_70.classList.add('m-70')
+      const containersvgmorerless1 = document.createElement('div')
+      containersvgmorerless1.classList.add('containersvgmorerless')
+      const containersvgmorerless2 = document.createElement('div')
+      containersvgmorerless2.classList.add('containersvgmorerless')
+      const spancontainer2 = document.createElement('span')
+      containersvgmorerless2.appendChild(spancontainer2)
+      const span2 = document.createElement('span')
+      const containersvgmorerless3 = document.createElement('div')
+      containersvgmorerless3.classList.add('containersvgmorerless')
+      const m_30 = document.createElement('div')
+      m_30.classList.add('m-30')
+      const divm_30 = document.createElement('div')
+      divm_30.classList.add('divm-30')
+      imggerada.src = id === 'c1' ? adidas1 : id === 'c2'
+        ? adidas2 : id === 'c3' ? adidas3 : id === 'c4' ?
+          adidasg1 : id === 'c5' ? adidasg2 : id === 'c6' ?
+            adidasg3 : id === 'c7' ? adidasg4 : id === 'c8' ?
+              adidasg5 : id === 'c9' ? adidasg6 : id === 'c10' ?
+                adidasg7 : id === 'c11' ? adidasg8 : id === 'c12' ?
+                  adidasg9 : id === 'c13' ? adidasg10 : id === 'c14' ?
+                    adidasg11 : adidasg12
+
+  
+      addorlessdiv.innerHTML = '$150'
+      containersvgmorerless1.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="w-5 h-5 lg:w-4 lg:h-4 text-white stroke-[2]"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15"></path></svg>'
+      containersvgmorerless3.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="w-5 h-5 lg:w-4 lg:h-4 text-white stroke-[2]"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"></path></svg>'
+      containersvgmorerless1.id = id === 'c1' ? 'c-1' : id === 'c2'
+        ? 'c-2' : id === 'c3' ? 'c-3' : id === 'c4' ?
+          'c-4' : id === 'c5' ? 'c-5' : id === 'c6' ?
+            'c-6' : id === 'c7' ? 'c-7' : id === 'c8' ?
+              'c-8' : id === 'c9' ? 'c-9' : id === 'c10' ?
+                'c-10' : id === 'c11' ? 'c-11' : id === 'c12' ?
+                  'c-12' : id === 'c13' ? 'c-13' : id === 'c14' ?
+                    'c-14' : 'c-15'
+
+      containersvgmorerless3.id = id === 'c11' ? 'c--1' : id === 'c2'
+        ? 'c--2' : id === 'c3' ? 'c--3' : id === 'c4' ?
+          'c--4' : id === 'c5' ? 'c--5' : id === 'c6' ?
+            'c--6' : id === 'c7' ? 'c--7' : id === 'c8' ?
+              'c--8' : id === 'c9' ? 'c--9' : id === 'c10' ?
+                'c--10' : id === 'c11' ? 'c--11' : id === 'c12' ?
+                  'c--12' : id === 'c13' ? 'c--13' : id === 'c14' ?
+                    'c--14' : 'c--15'
+      spancontainer2.id = id === 'c1' ? 'c-11' : id === 'c2'
+        ? 'c-22' : id === 'c3' ? 'c-33' : id === 'c4' ?
+          'c-44' : id === 'c5' ? 'c-55' : id === 'c6' ?
+            'c-66' : id === 'c7' ? 'c-77' : id === 'c8' ?
+              'c-88' : id === 'c9' ? 'c-99' : id === 'c10' ?
+                'c-100' : id === 'c11' ? 'c-111' : id === 'c12' ?
+                  'c-122' : id === 'c13' ? 'c-133' : id === 'c14' ?
+                    'c-144' : 'c-155'
+
+      containersvgmorerless1.addEventListener('click', (e) => {
+        if (e.currentTarget.id === 'c-1') {
+          setQtd1(--qtd1)
+          document.getElementById('c-11').innerHTML = qtd1
+
+        } else if (e.currentTarget.id === 'c-2') {
+          setQtd2(--qtd2)
+          document.getElementById('c-22').innerHTML = qtd2
+          // console.log('entrou aqui')
+        } else if (e.currentTarget.id === 'c-3') {
+          setQtd2(--qtd3)
+          document.getElementById('c-33').innerHTML = qtd3
+
+        } else if (e.currentTarget.id === 'c-4') {
+          setQtd2(--qtd4)
+          document.getElementById('c-44').innerHTML = qtd4
+
+        } else if (e.currentTarget.id === 'c-6') {
+          setQtd2(--qtd5)
+          document.getElementById('c-55').innerHTML = qtd5
+
+        } else if (e.currentTarget.id === 'c-6') {
+          setQtd2(--qtd6)
+          document.getElementById('c-66').innerHTML = qtd6
+
+        } else if (e.currentTarget.id === 'c-7') {
+          setQtd2(--qtd7)
+          document.getElementById('c-77').innerHTML = qtd7
+
+        } else if (e.currentTarget.id === 'c-8') {
+          setQtd2(--qtd8)
+          document.getElementById('c-88').innerHTML = qtd8
+
+        } else if (e.currentTarget.id === 'c-9') {
+          setQtd2(--qtd9)
+          document.getElementById('c-99').innerHTML = qtd9
+
+        } else if (e.currentTarget.id === 'c-10') {
+          setQtd2(--qtd10)
+          document.getElementById('c-100').innerHTML = qtd10
+
+        } else if (e.currentTarget.id === 'c-11') {
+          setQtd2(--qtd11)
+          document.getElementById('c-111').innerHTML = qtd11
+
+        } else if (e.currentTarget.id === 'c-12') {
+          setQtd2(--qtd12)
+          document.getElementById('c-122').innerHTML = qtd12
+
+        } else if (e.currentTarget.id === 'c-13') {
+          setQtd2(--qtd13)
+          document.getElementById('c-133').innerHTML = qtd13
+
+        } else if (e.currentTarget.id === 'c-14') {
+          setQtd2(--qtd14)
+          document.getElementById('c-144').innerHTML = qtd14
+
+        } else if (e.currentTarget.id === 'c-15') {
+          setQtd2(--qtd15)
+          document.getElementById('c-155').innerHTML = qtd15
+
+        } else if (e.currentTarget.id === 'c-14') {
+          setQtd2(--qtd1)
+          document.getElementById('c-11').innerHTML = qtd2
+
+        } else if (e.currentTarget.id === 'c-15') {
+          setQtd2(--qtd1)
+          document.getElementById('c-11').innerHTML = qtd2
+        }
+        console.log(e.currentTarget.id)
+      })
+      containersvgmorerless3.addEventListener('click', (e) => {
+        if (e.currentTarget.id === 'c--15') {
+          setQtd1(++qtd1)
+          document.getElementById('c-11').innerHTML = qtd1
+          console.log(qtd1)
+        }
+      })
+      titlespanfc.innerHTML = id === 'c1' ? 'Nike Addapt BB 2.0' : id === 'c2'
+        ? 'Nike Martine Rose' : id === 'c3' ? 'Nike Smart Shoe 2.0' : id === 'c4' ?
+          'Nike Air Low Premium' : id === 'c5' ? 'Nike Air Force Green' : id === 'c6' ?
+            'Nike Addapt BB Rose' : id === 'c7' ? 'Nike Air Premium' : id === 'c8' ?
+              'Nike Adapt BB Pro' : id === 'c9' ? 'Air Jordan PR3' : id === 'c10' ?
+                'Nike Multi Smart Shoe' : id === 'c11' ? 'Nike Jordan Air Max' : id === 'c12' ?
+                  'Nike Old Max-x' : id === 'c13' ? 'Nike Lime Jordan 11' : id === 'c14' ?
+                    'Nike Air Black Max' : 'Nike Zoom Max'
+
+      subtitlespanfc.innerHTML = 'MEN Running Shoes'
+      spancontainer2.innerHTML = '1'
+      divm_30.classList.add('cc')
+      divm_30.innerHTML = '<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16zM53.2 467a48 48 0 0 0 47.9 45h245.8a48 48 0 0 0 47.9-45L416 128H32z"></path></svg>'
+      divmaincarrinho.appendChild(divitemc)
+      divitemc.appendChild(topdivi)
+      topdivi.appendChild(imgitem)
+      topdivi.appendChild(flexcti)
+      imgitem.appendChild(imggerada)
+      flexcti.appendChild(flexcti_50)
+      flexcti.appendChild(flexcti_502)
+      flexcti_50.appendChild(titlespanfc)
+      flexcti_50.appendChild(subtitlespanfc)
+      flexcti_50.appendChild(addorlessdiv)
+      flexcti_502.appendChild(m_70)
+      flexcti_502.appendChild(m_30)
+      m_70.appendChild(containersvgmorerless1)
+      m_70.appendChild(containersvgmorerless2)
+      m_70.appendChild(containersvgmorerless3)
+      containersvgmorerless1.appendChild(span2)
+      m_30.appendChild(divm_30)
     }
-    const divmaincarrinho = document.querySelector('.divmaincarrinho')
-    divmaincarrinho.classList.add('divmaincarrinhostart')
-    const divitemc = document.createElement('div')
-    divitemc.classList.add('divitemc')
-    const topdivi = document.createElement('div')
-    topdivi.classList.add('topdivi')
-    const imgitem = document.createElement('div')
-    imgitem.classList.add('imgitem')
-    imgitem.classList.add(id === 'c1' ? 'gid1' : id === 'c2'
-      ? 'gid2' : id === 'c3' ? 'gid3' : id === 'c4' ?
-        'gid4' : id === 'c5' ? 'gid5' : id === 'c6' ?
-          'gid6' : id === 'c7' ? 'gid7' : id === 'c8' ?
-            'gid8' : id === 'c9' ? 'gid9' : id === 'c10' ?
-              'gid10' : id === 'c11' ? 'gid11' : id === 'c12'
-                ? 'gid12' : id === 'c13' ? 'gid13' : id === 'c14'
-                  ? 'gid14' : 'gid15'
-    )
 
-    const imggerada = document.createElement('img')
-    imggerada.classList.add('imgitemi')
-    const flexcti = document.createElement('div')
-    flexcti.classList.add('flexcti')
-    const flexcti_50 = document.createElement('div')
-    flexcti_50.classList.add('flexcti-50', 'fp1')
-    const titlespanfc = document.createElement('span')
-    titlespanfc.classList.add('titlspanfc')
-    const subtitlespanfc = document.createElement('span')
-    subtitlespanfc.classList.add('subtitlespanfc')
-    const addorlessdiv = document.createElement('div')
-    addorlessdiv.classList.add('addorlessdiv')
-    const flexcti_502 = document.createElement('div')
-    const spanvalor = document.createElement('span')
-    spanvalor.classList.add('spanmsgi')
-    flexcti_502.classList.add('flexcti-50', 'fp2')
-    const m_70 = document.createElement('div')
-    m_70.classList.add('m-70')
-    const containersvgmorerless1 = document.createElement('div')
-    containersvgmorerless1.classList.add('containersvgmorerless')
-    const containersvgmorerless2 = document.createElement('div')
-    containersvgmorerless2.classList.add('containersvgmorerless')
-    const spancontainer2 = document.createElement('span')
-    containersvgmorerless2.appendChild(spancontainer2)
-    const span2 = document.createElement('span')
-    const containersvgmorerless3 = document.createElement('div')
-    containersvgmorerless3.classList.add('containersvgmorerless')
-    const m_30 = document.createElement('div')
-    m_30.classList.add('m-30')
-    const divm_30 = document.createElement('div')
-    divm_30.classList.add('divm-30')
-    imggerada.src = id === 'c1' ? adidas1 : id === 'c2'
-      ? adidas2 : id === 'c3' ? adidas3 : id === 'c4' ?
-        adidasg1 : id === 'c5' ? adidasg2 : id === 'c6' ?
-          adidasg3 : id === 'c7' ? adidasg4 : id === 'c8' ?
-            adidasg5 : id === 'c9' ? adidasg6 : id === 'c10' ?
-              adidasg7 : id === 'c11' ? adidasg8 : id === 'c12' ?
-                adidasg9 : id === 'c13' ? adidasg10 : id === 'c14' ?
-                  adidasg11 : adidasg12
-
-    // console.log(id)
-    addorlessdiv.innerHTML = '$150'
-    containersvgmorerless1.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="w-5 h-5 lg:w-4 lg:h-4 text-white stroke-[2]"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15"></path></svg>'
-    containersvgmorerless3.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="w-5 h-5 lg:w-4 lg:h-4 text-white stroke-[2]"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"></path></svg>'
-    containersvgmorerless1.id = id === 'c1' ? 'c-1' : id === 'c2'
-      ? 'c-2' : id === 'c3' ? 'c-3' : id === 'c4' ?
-        'c-4' : id === 'c5' ? 'c-5' : id === 'c6' ?
-          'c-6' : id === 'c7' ? 'c-7' : id === 'c8' ?
-            'c-8' : id === 'c9' ? 'c-9' : id === 'c10' ?
-              'c-10' : id === 'c11' ? 'c-11' : id === 'c12' ?
-                'c-12' : id === 'c13' ? 'c-13' : id === 'c14' ?
-                  'c-14' : 'c-15'
-
-    containersvgmorerless3.id = id === 'c1' ? 'c+1' : id === 'c2'
-      ? 'c+2' : id === 'c3' ? 'c+3' : id === 'c4' ?
-        'c+4' : id === 'c5' ? 'c+5' : id === 'c6' ?
-          'c+6' : id === 'c7' ? 'c+7' : id === 'c8' ?
-            'c+8' : id === 'c9' ? 'c+9' : id === 'c10' ?
-              'c+10' : id === 'c11' ? 'c+11' : id === 'c12' ?
-                'c+12' : id === 'c13' ? 'c+13' : id === 'c14' ?
-                  'c+14' : 'c+15'
-
-    containersvgmorerless1.addEventListener('click', (e) => {
-      console.log(e.currentTarget.id)
-
-    })
-    titlespanfc.innerHTML = id === 'c1' ? 'Nike Addapt BB 2.0' : id === 'c2'
-      ? 'Nike Martine Rose' : id === 'c3' ? 'Nike Smart Shoe 2.0' : id === 'c4' ?
-        'Nike Air Low Premium' : id === 'c5' ? 'Nike Air Force Green' : id === 'c6' ?
-          'Nike Addapt BB Rose' : id === 'c7' ? 'Nike Air Premium' : id === 'c8' ?
-            'Nike Adapt BB Pro' : id === 'c9' ? 'Air Jordan PR3' : id === 'c10' ?
-              'Nike Multi Smart Shoe' : id === 'c11' ? 'Nike Jordan Air Max' : id === 'c12' ?
-                'Nike Old Max-x' : id === 'c13' ? 'Nike Lime Jordan 11' : id === 'c14' ?
-                  'Nike Air Black Max' : 'Nike Zoom Max'
-
-    subtitlespanfc.innerHTML = 'MEN Running Shoes'
-    spancontainer2.innerHTML = '1'
-    divm_30.classList.add('cc')
-    divm_30.innerHTML = '<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16zM53.2 467a48 48 0 0 0 47.9 45h245.8a48 48 0 0 0 47.9-45L416 128H32z"></path></svg>'
-    divmaincarrinho.appendChild(divitemc)
-    divitemc.appendChild(topdivi)
-    topdivi.appendChild(imgitem)
-    topdivi.appendChild(flexcti)
-    imgitem.appendChild(imggerada)
-    flexcti.appendChild(flexcti_50)
-    flexcti.appendChild(flexcti_502)
-    flexcti_50.appendChild(titlespanfc)
-    flexcti_50.appendChild(subtitlespanfc)
-    flexcti_50.appendChild(addorlessdiv)
-    flexcti_502.appendChild(m_70)
-    flexcti_502.appendChild(m_30)
-    m_70.appendChild(containersvgmorerless1)
-    m_70.appendChild(containersvgmorerless2)
-    m_70.appendChild(containersvgmorerless3)
-    containersvgmorerless1.appendChild(span2)
-    m_30.appendChild(divm_30)
 
     container.appendChild(sucessdiv)
     sucessdiv.appendChild(div2)
@@ -313,38 +413,133 @@ const App = () => {
     setTimeout(() => {
       sucessdiv.remove()
     }, 2150)
-    console.log(id)
-    if (id === 'c1') {
+
+
+
+
+    if (id1 === true && id === 'c1') {
+      setQtd1(++qtd1)
+      document.querySelector('#c-11').innerHTML = qtd1
+      return
+
+    } else if (id1 === false && id === 'c1') {
+      CodigoIntegrado()
       setid1(true)
-    } else if ('c2') {
+
+    } else if (id2 === true && id === 'c2') {
+      setQtd2(++qtd2)
+      document.querySelector('#c-22').innerHTML = qtd2
+      return
+
+    } else if (id2 === false && id === 'c2') {
+      CodigoIntegrado()
       setid2(true)
-    } else if ('c3') {
+    } else if (id3 === true && id === 'c3') {
+      setQtd3(++qtd3)
+      document.querySelector('#c-33').innerHTML = qtd3
+      return
+
+    } else if (id3 === false && id === 'c3') {
+      CodigoIntegrado()
       setid3(true)
-    } else if ('c4') {
+    } else if (id4 === true && id === 'c4') {
+      setQtd4(++qtd4)
+      document.querySelector('#c-44').innerHTML = qtd4
+
+      return
+    } else if (id4 === false && id === 'c4') {
+      CodigoIntegrado()
       setid4(true)
-    } else if ('c5') {
+    } else if (id5 === true && id === 'c5') {
+      setQtd5(++qtd5)
+      document.querySelector('#c-55').innerHTML = qtd5
+
+      return
+    } else if (id5 === false && id === 'c5') {
+      CodigoIntegrado()
       setid5(true)
-    } else if ('c6') {
+    } else if (id6 === true && id === 'c6') {
+      setQtd6(++qtd6)
+      document.querySelector('#c-66').innerHTML = qtd6
+
+      return
+    } else if (id6 === false && id === 'c6') {
+      CodigoIntegrado()
       setid6(true)
-    } else if ('c7') {
+    } else if (id7 === true && id === 'c7') {
+      setQtd7(++qtd7)
+      document.querySelector('#c-77').innerHTML = qtd7
+
+      return
+    } else if (id7 === false && id === 'c7') {
+      CodigoIntegrado()
       setid7(true)
-    } else if ('c8') {
+    } else if (id8 === true && id === 'c8') {
+      setQtd8(++qtd8)
+      document.querySelector('#c-88').innerHTML = qtd8
+
+      return
+    } else if (id8 === false && id === 'c8') {
+      CodigoIntegrado()
       setid8(true)
-    } else if ('c9') {
+    } else if (id9 === true && id === 'c9') {
+      setQtd9(++qtd9)
+      document.querySelector('#c-99').innerHTML = qtd9
+
+      return
+    } else if (id9 === false && id === 'c9') {
+      CodigoIntegrado()
       setid9(true)
-    } else if ('c10') {
+    } else if (id10 === true && id === 'c10') {
+      setQtd10(++qtd10)
+      document.querySelector('#c-100').innerHTML = qtd10
+
+      return
+    } else if (id10 === false && id === 'c10') {
+      CodigoIntegrado()
       setid10(true)
-    } else if ('c11') {
+    } else if (id11 === true && id === 'c11') {
+      setQtd11(++qtd11)
+      document.querySelector('#c-111').innerHTML = qtd11
+        + 1
+      return
+    } else if (id11 === false && id === 'c11') {
+      CodigoIntegrado()
       setid11(true)
-    } else if ('c12') {
+    } else if (id12 === true && id === 'c12') {
+      setQtd12(++qtd12)
+      document.querySelector('#c-122').innerHTML = qtd12
+
+      return
+    } else if (id12 === false && id === 'c12') {
+      CodigoIntegrado()
       setid12(true)
-    } else if ('c13') {
+    } else if (id13 === true && id === 'c13') {
+      setQtd13(++qtd13)
+      document.querySelector('#c-133').innerHTML = qtd13
+
+      return
+    } else if (id13 === false && id === 'c13') {
+      CodigoIntegrado()
       setid13(true)
-    } else if ('c14') {
+    } else if (id14 === true && id === 'c14') {
+      setQtd14(++qtd14)
+      document.querySelector('#c-144').innerHTML = qtd14
+
+      return
+    } else if (id14 === false && id === 'c14') {
+      CodigoIntegrado()
       setid14(true)
-    } else if ('c15') {
+    } else if (id15 === true && id === 'c15') {
+      setQtd15(++qtd15)
+      document.querySelector('#c-155').innerHTML = qtd15
+
+      return
+    } else if (id15 === false && id === 'c15') {
+      CodigoIntegrado()
       setid15(true)
     }
+
   }
   return (
     <>
@@ -371,7 +566,20 @@ const App = () => {
 
           </> : <>
 
+            <div className='footer-subtotal'>
+              <div className='footer-subtotalmargin'>
+                <div className='footersb1'>
+                  <span className='subtotalspan1'>SUBTOTAL</span>
+                  <div className='subtotalvaluediv'> <span className='subtotalspan2'>$200 </span></div>
+                </div>
+                <div className='footersb2'>
+                  <span className='spantextp'>Taxes and Shipping Will Calculate At Shipping</span>
+                  <button className='subtotalbutton'>Check Out</button>
+                </div>
+              </div>
 
+
+            </div>
           </>
           }
         </div>
