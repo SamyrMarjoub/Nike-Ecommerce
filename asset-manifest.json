@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Nike-Ecommerce/static/css/main.1aab9fab.css",
-    "main.js": "/Nike-Ecommerce/static/js/main.743b3bd2.js",
+    "main.css": "/Nike-Ecommerce/static/css/main.c9bff2db.css",
+    "main.js": "/Nike-Ecommerce/static/js/main.cae9de0c.js",
     "static/js/787.c4356498.chunk.js": "/Nike-Ecommerce/static/js/787.c4356498.chunk.js",
     "static/media/adidasg9.png": "/Nike-Ecommerce/static/media/adidasg9.5cf07402a4a3aee66e1d.png",
     "static/media/adidasg7.png": "/Nike-Ecommerce/static/media/adidasg7.d2d46288b3f964c06841.png",
@@ -39,12 +39,12 @@
     "index.html": "/Nike-Ecommerce/index.html",
     "static/media/cart.svg": "/Nike-Ecommerce/static/media/cart.aa0aebf363e07c8e6a3e8ac706489297.svg",
     "static/media/close.svg": "/Nike-Ecommerce/static/media/close.f1cf61d5131b3a288c22d5949e4f2683.svg",
-    "main.1aab9fab.css.map": "/Nike-Ecommerce/static/css/main.1aab9fab.css.map",
-    "main.743b3bd2.js.map": "/Nike-Ecommerce/static/js/main.743b3bd2.js.map",
+    "main.c9bff2db.css.map": "/Nike-Ecommerce/static/css/main.c9bff2db.css.map",
+    "main.cae9de0c.js.map": "/Nike-Ecommerce/static/js/main.cae9de0c.js.map",
     "787.c4356498.chunk.js.map": "/Nike-Ecommerce/static/js/787.c4356498.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1aab9fab.css",
-    "static/js/main.743b3bd2.js"
+    "static/css/main.c9bff2db.css",
+    "static/js/main.cae9de0c.js"
   ]
 }
