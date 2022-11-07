@@ -48,7 +48,7 @@ const App = () => {
       initialSlide: 0,
       responsive: [
         {
-          breakpoint: 1024,
+          breakpoint: 1300,
           settings: {
             slidesToShow: 3,
             slidesToScroll: 3,
@@ -57,7 +57,7 @@ const App = () => {
           }
         },
         {
-          breakpoint: 600,
+          breakpoint: 950,
           settings: {
             slidesToShow: 2,
             slidesToScroll: 2,
@@ -65,7 +65,7 @@ const App = () => {
           }
         },
         {
-          breakpoint: 480,
+          breakpoint: 550,
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1
@@ -291,6 +291,38 @@ const App = () => {
                   'c-122' : id === 'c13' ? 'c-133' : id === 'c14' ?
                     'c-144' : 'c-155'
 
+     
+      titlespanfc.innerHTML = id === 'c1' ? 'Nike Addapt BB 2.0' : id === 'c2'
+        ? 'Nike Martine Rose' : id === 'c3' ? 'Nike Smart Shoe 2.0' : id === 'c4' ?
+          'Nike Air Low Premium' : id === 'c5' ? 'Nike Air Force Green' : id === 'c6' ?
+            'Nike Addapt BB Rose' : id === 'c7' ? 'Nike Air Premium' : id === 'c8' ?
+              'Nike Adapt BB Pro' : id === 'c9' ? 'Air Jordan PR3' : id === 'c10' ?
+                'Nike Multi Smart Shoe' : id === 'c11' ? 'Nike Jordan Air Max' : id === 'c12' ?
+                  'Nike Old Max-x' : id === 'c13' ? 'Nike Lime Jordan 11' : id === 'c14' ?
+                    'Nike Air Black Max' : 'Nike Zoom Max'
+
+      subtitlespanfc.innerHTML = 'MEN Running Shoes'
+      spancontainer2.innerHTML = '1'
+      divm_30.classList.add('cc')
+      divm_30.innerHTML = '<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16zM53.2 467a48 48 0 0 0 47.9 45h245.8a48 48 0 0 0 47.9-45L416 128H32z"></path></svg>'
+      divmaincarrinho.appendChild(divitemc)
+      divitemc.appendChild(topdivi)
+      topdivi.appendChild(imgitem)
+      topdivi.appendChild(flexcti)
+      imgitem.appendChild(imggerada)
+      flexcti.appendChild(flexcti_50)
+      flexcti.appendChild(flexcti_502)
+      flexcti_50.appendChild(titlespanfc)
+      flexcti_50.appendChild(subtitlespanfc)
+      flexcti_50.appendChild(addorlessdiv)
+      flexcti_502.appendChild(m_70)
+      flexcti_502.appendChild(m_30)
+      m_70.appendChild(containersvgmorerless1)
+      m_70.appendChild(containersvgmorerless2)
+      m_70.appendChild(containersvgmorerless3)
+      containersvgmorerless1.appendChild(span2)
+      m_30.appendChild(divm_30)
+
       containersvgmorerless1.addEventListener('click', (e) => {
         if (e.currentTarget.id === 'c-1') {
           setQtd1(--qtd1)
@@ -369,36 +401,6 @@ const App = () => {
           console.log(qtd1)
         }
       })
-      titlespanfc.innerHTML = id === 'c1' ? 'Nike Addapt BB 2.0' : id === 'c2'
-        ? 'Nike Martine Rose' : id === 'c3' ? 'Nike Smart Shoe 2.0' : id === 'c4' ?
-          'Nike Air Low Premium' : id === 'c5' ? 'Nike Air Force Green' : id === 'c6' ?
-            'Nike Addapt BB Rose' : id === 'c7' ? 'Nike Air Premium' : id === 'c8' ?
-              'Nike Adapt BB Pro' : id === 'c9' ? 'Air Jordan PR3' : id === 'c10' ?
-                'Nike Multi Smart Shoe' : id === 'c11' ? 'Nike Jordan Air Max' : id === 'c12' ?
-                  'Nike Old Max-x' : id === 'c13' ? 'Nike Lime Jordan 11' : id === 'c14' ?
-                    'Nike Air Black Max' : 'Nike Zoom Max'
-
-      subtitlespanfc.innerHTML = 'MEN Running Shoes'
-      spancontainer2.innerHTML = '1'
-      divm_30.classList.add('cc')
-      divm_30.innerHTML = '<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16zM53.2 467a48 48 0 0 0 47.9 45h245.8a48 48 0 0 0 47.9-45L416 128H32z"></path></svg>'
-      divmaincarrinho.appendChild(divitemc)
-      divitemc.appendChild(topdivi)
-      topdivi.appendChild(imgitem)
-      topdivi.appendChild(flexcti)
-      imgitem.appendChild(imggerada)
-      flexcti.appendChild(flexcti_50)
-      flexcti.appendChild(flexcti_502)
-      flexcti_50.appendChild(titlespanfc)
-      flexcti_50.appendChild(subtitlespanfc)
-      flexcti_50.appendChild(addorlessdiv)
-      flexcti_502.appendChild(m_70)
-      flexcti_502.appendChild(m_30)
-      m_70.appendChild(containersvgmorerless1)
-      m_70.appendChild(containersvgmorerless2)
-      m_70.appendChild(containersvgmorerless3)
-      containersvgmorerless1.appendChild(span2)
-      m_30.appendChild(divm_30)
     }
 
 
@@ -547,7 +549,7 @@ const App = () => {
       <div className='carrinhodecompra none'>
         <div className='divheadercarrinho'>
           <div className='divheadercarrinho1'>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" className="w-5 h-5 text-slate-900 hover:text-orange-500 stroke-[2] bladeimg"><path fill-rule="evenodd" d="M13.28 3.97a.75.75 0 010 1.06L6.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5a.75.75 0 010-1.06l7.5-7.5a.75.75 0 011.06 0zm6 0a.75.75 0 010 1.06L12.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5a.75.75 0 010-1.06l7.5-7.5a.75.75 0 011.06 0z" clip-rule="evenodd"></path></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" className="w-5 h-5 text-slate-900 hover:text-orange-500 stroke-[2] bladeimg"><path fillRule="evenodd" d="M13.28 3.97a.75.75 0 010 1.06L6.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5a.75.75 0 010-1.06l7.5-7.5a.75.75 0 011.06 0zm6 0a.75.75 0 010 1.06L12.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5a.75.75 0 010-1.06l7.5-7.5a.75.75 0 011.06 0z" clipRule="evenodd"></path></svg>
             <span className='yourcartspan'>Your Cart</span>
             <div className='itensdiv'>
               <span className='itensspanleft'>({qtd} itens)</span>
@@ -683,7 +685,7 @@ const App = () => {
                   <div id='2' onClick={comprar} className='buttondivnow'> Buy Now </div>
 
                 </div>
-                <img src={adidas2} className='adidas1' />
+                <img src={adidas2} className='adidas1 adidas1g2' />
               </div>
             </div>
             <div className='gridpo gridpo3'>
@@ -1249,7 +1251,7 @@ const App = () => {
               </ul>
             </div>
             <div className='f-20'>
-              <span className='footer-last-text'>Copyright© All Reserved Rights JSSTACK DEVELOPERS 2022</span>
+              <span className='footer-last-text'>Copyright© All Reserved Rights Samyr Marjoub 2022</span>
             </div>
 
           </footer>
